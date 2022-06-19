@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f6f9f9;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-weight: 500;
+}
+.collapse li{
+    padding-left: 15px;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.hg{
+    min-height: 89vh;
+
+}
+.banner-content{}
+.banner h1{
+    text-transform: uppercase;
+    font-size: 85px;
+    color: #fff;
+}
+.banner p{
+    color: #fff;
+    font-size: 18px;
+}
+.banner span{
+    display: block;
+    height: 2px;
+    width: 85%;
+    background: #15a4fa;
+    margin: auto;
+}
+.banner a{}
+.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #15a4fa;
+    text-transform: capitalize;
+    margin-top: 30px;
+    padding: 0;
+    padding: 8px 22px;
+}
+.btn-primary:hover{
+    background-color: #15a4fa;
+    border-color: transparent;
+}
+.btn-primary:active:focus{
+    box-shadow: none;
+
+}
+.icon{
+    color: #fff;
+    position: absolute; 
+    left: 50%;
+    bottom: 100px; 
+    transform: translateX(-50%);
+    font-size: 20px;
+    animation: updown 1.5s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown {
+    0% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+.simple_section{
+    background-color: #f6f9f9;
+    text-align: center;
+}
+.simple_section h3{
+    font-size: 32px;
+    color: #2d3950;
+    font-weight: 400;
+}
+.simple_section p{
+    color: #999999;
+    margin-top: 15px;
+}
+.feature_section{}
+.feature_icon{
+    width: 80px;
+    height: 80px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.feature_section h3{
+    margin: 15px 0px;
+    color: #2d3950;
+}
+.feature_section p{
+    color: #999999;
+}
+.gallery_section{
+    background-color: #f6f9f9;
+}
+.gallery_section h3{
+    font-size: 32px;
+    color: #2d3950;
+    font-weight: 400;
+}
+.gallery_section p{
+    color: #999999;
+    margin: 10px 0;
+}
+.gallery_item{
+    position: relative;
+    width: 100%;
+}
+.gallery_item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #15a4fa;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+.gallery_item:hover::before{
+    opacity: 0.5;
+}
+.gallery_item img{
+    width: 100%;
+}
+
+.hover_content {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    opacity: 0;
+    transition: 00.4s all ease-in-out;
+    /* list-style: none; */
+}
+
+.hover_content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.hover_content ul li {
+    margin: 10px;
+    border: 1px solid #ffffff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.hover_content ul li a {
+    color: #ffffff;
+}
+
+.hover_content ul li a i {}
+
+.gallery_item:hover .hover_content {
+    opacity: 1;
+}
+
+.contact_section{
+    background-image: url(../images/stay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.contact_section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: 0.8;
+    z-index: -1;
+}
+.contact_section h2 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact_section p {
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-custom{
+    color: #fff;
+    background-color: transparent;
+    border-color: #15a4fa;
+    text-transform: capitalize;
+    padding: 0;
+    padding: 8px 45px;
+}
+
+.btn-custom:hover{
+    background-color: #15a4fa;
+    border-color: transparent;
+}
+.btn-custom:active:focus{
+    box-shadow: none;
+
+}
+
+.contact_section form input {
+
+    background-color: transparent;
+    border: none;
+    border: 1px solid #999999;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contact_section form textarea {
+    background-color: transparent;
+    border: none;
+    border: 1px solid #999999;
+    padding: 10px;
+    border-radius: 4px;
+}
+.form-check-input{
+    background-color: #9aa1aa !important;
+    padding: 0px !important;
+}
+.check_label{
+    color: #ffffff;
+}
+
+.contact_section form input:focus{
+    box-shadow: none;
+}
+.contact_section form textarea:focus{
+    box-shadow: none;
+}
+.form-check-input:focus{
+    box-shadow: none;
+}
+footer{
+    background-color: #f6f9f9;
+}
+
+.copyright h3 {
+    font-size: 16px;
+    color: #999999;
+}
+
+
+.social_link ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+}
+
+.social_link ul li {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15a4fa;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.social_link ul li a {
+    color: #ffffff;
+}
